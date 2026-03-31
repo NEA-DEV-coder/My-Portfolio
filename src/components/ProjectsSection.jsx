@@ -59,7 +59,7 @@ const ProjectsSection = () => {
 
               {/* Content */}
               <div className="p-6 relative z-10">
-                <h3 className="text-2xl font-semibold text-white">
+                <h3 className="text-2xl lg:text-lg font-semibold text-white">
                   {project.title}
                 </h3>
 
