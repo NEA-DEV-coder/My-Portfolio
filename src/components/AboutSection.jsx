@@ -2,7 +2,7 @@ import React from "react";
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGitAlt } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 import { motion } from "framer-motion";
-import portImg from "../assets/images/hero-img.png";
+import portImg from "../assets/images/pro-2.png";
 
 const AboutSection = () => {
   return (

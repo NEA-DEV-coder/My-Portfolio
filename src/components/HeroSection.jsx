@@ -1,4 +1,4 @@
-import heroImg from "../assets/images/port-img.png";
+import heroImg from "../assets/images/pro-image.png";
 import { motion } from "framer-motion";
 import { fadeInUp } from "../animations/variants";
 
