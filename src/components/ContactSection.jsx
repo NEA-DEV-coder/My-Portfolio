@@ -62,7 +62,7 @@ const ContactSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-16">
           {/* LEFT SIDE */}
           <div>
             <h3 className="text-2xl font-semibold text-white mb-6">
@@ -102,7 +102,7 @@ const ContactSection = () => {
                 <FaLinkedin />
               </a>
               <a
-                href="#"
+                href="https://x.com/NEA_DEV_coder"
                 className="text-gray-400 hover:text-sky-400 transition"
               >
                 <FaTwitter />
@@ -111,52 +111,66 @@ const ContactSection = () => {
           </div>
 
           {/* RIGHT SIDE - FORM */}
-          <div className="bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur-md shadow-xl">
-            <form ref={form} onSubmit={sendEmail} className="space-y-6">
-              <div>
+          <div
+            className="bg-white/5 border w-full lg:w-[80%]
+          
+          border-white/10 rounded-2xl px-3 py-2 backdrop-blur-md shadow-xl"
+          >
+            <form ref={form} onSubmit={sendEmail} className="space-y-3">
+              <div className="flex flex-col gap-0">
                 <label className="text-gray-300 text-sm">Name</label>
                 <input
                   type="text"
                   name="name"
                   required
-                  className="w-full mt-2 p-3 bg-[#0f172a] border border-white/10 rounded-lg text-gray-300 focus:outline-none focus:border-blue-500 transition"
+                  placeholder="Enter Your Name"
+                  className="w-full mt-2 px-1 py-2 bg-[#0f172a] 
+                  lg:p-1
+                  border border-white/10 rounded-lg
+                   text-gray-300 focus:outline-none focus:border-blue-500 transition"
                 />
               </div>
 
-              <div>
+              <div className="flex flex-col gap-0">
                 <label className="text-gray-300 text-sm">Email</label>
                 <input
                   type="email"
                   name="email"
                   required
-                  className="w-full mt-2 p-3 bg-[#0f172a] border border-white/10 rounded-lg text-gray-300 focus:outline-none focus:border-blue-500 transition"
+                  placeholder="Enter Your Email"
+                  className="w-full mt-2 px-1 py-2 lg:p-1 bg-[#0f172a] border border-white/10 rounded-lg
+                   text-gray-300 focus:outline-none focus:border-blue-500 transition"
                 />
               </div>
 
-              <div>
+              <div className="flex flex-col gap-0">
                 <label className="text-gray-300 text-sm">Phone Number</label>
                 <input
                   type="tel"
                   name="number"
                   required
-                  className="w-full mt-2 p-3 bg-[#0f172a] border border-white/10 rounded-lg text-gray-300 focus:outline-none focus:border-blue-500 transition"
+                  placeholder="Enter Your Phone Number"
+                  className="w-full mt-2 px-1 py-2 lg:p-1 bg-[#0f172a] border border-white/10 rounded-lg
+                   text-gray-300 focus:outline-none focus:border-blue-500 transition"
                 />
               </div>
 
-              <div>
+              <div className="flex flex-col gap-0">
                 <label className="text-gray-300 text-sm">Message</label>
                 <textarea
                   name="message"
                   required
+                  placeholder="Enter Your Message"
                   rows="4"
-                  className="w-full mt-2 p-3 bg-[#0f172a] border border-white/10 rounded-lg text-gray-300 focus:outline-none focus:border-blue-500 transition"
+                  className="w-full mt-2 px-1 py-2 lg:p-0 bg-[#0f172a] border border-white/10 rounded-lg
+                   text-gray-300 focus:outline-none focus:border-blue-500 transition"
                 ></textarea>
               </div>
 
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full py-3 bg-blue-500 hover:bg-blue-600 transition rounded-lg text-white font-medium disabled:opacity-50"
+                className="w-full lg:p-1 py-3 bg-blue-500 hover:bg-blue-600 transition rounded-lg text-white font-medium disabled:opacity-50"
               >
                 {loading ? "Sending..." : "Send Message"}
               </button>

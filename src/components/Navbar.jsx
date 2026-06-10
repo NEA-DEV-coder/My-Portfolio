@@ -36,7 +36,7 @@ const Navbar = () => {
         </h1>
 
         {/* Desktop Links */}
-        <ul className="hidden md:flex items-center gap-10 text-gray-300">
+        <ul className="hidden lg:flex items-center gap-10 text-gray-300">
           {navLinks.map((link, index) => (
             <li key={index}>
               <a

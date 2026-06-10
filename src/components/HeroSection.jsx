@@ -5,7 +5,7 @@ import { fadeInUp } from "../animations/variants";
 const HeroSection = () => {
   return (
     <motion.section
-      id="about"
+      id="home"
       variants={fadeInUp}
       initial="hidden"
       whileInView="visible"

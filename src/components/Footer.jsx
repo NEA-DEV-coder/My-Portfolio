@@ -88,7 +88,7 @@ const Footer = () => {
               </a>
 
               <a
-                href="#"
+                href="https://x.com/NEA_DEV_coder"
                 className="text-gray-400 hover:text-sky-400 transition"
               >
                 <FaTwitter />
